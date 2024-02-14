@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    margin: 0;
+    background: radial-gradient(#0a65cd,#ebebf0c2);
+}
+.page-title{
+    color: rgb(3, 4, 67);
+    font-family: serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+.game-info-container{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+.game-info{
+    color: rgb(3, 4, 67);
+    font-size: 4em;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.card{
+    position: relative;
+    height: 175px;
+    width: 125px;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: rgb(3, 4, 67);
+    overflow: hidden;
+}
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform 500ms ease-in-out ;
+}
+
+.card.visible .card-back{
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front{
+    transform: rotateY(0);
+}
+.card.matched .card-value{
+    animation: dance 1s linear infinite 500ms;
+}
+@keyframes dance {
+    0%,100%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    
+}
+.card-back{
+    background: black;
+    border-color: rgb(3, 4, 67);
+}
+.card-front{
+    background: #eff2ff;
+    transform: rotateY(180deg);
+}
+.card-value{
+    transform: scale(.7);
+    width: 125px;
+    height: 175px;
+}
+.card-front:hover .card-value{
+    transform: scale(.8);
+}
+.back{
+    align-self: flex-start;
+    width: 125px;
+    height: 175px;
+    transition: transform 100ms ease-in-out;
+    
+}
+.card-back:hover .back{
+    transform: translateY(0);
+}

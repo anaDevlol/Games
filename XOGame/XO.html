@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Castoro+Titling&family=El+Messiri&family=Foldit:wght@100&family=IBM+Plex+Sans+Arabic:wght@300&family=Mada:wght@300&family=Montserrat:wght@100&family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="XO.css">
+</head>
+<body>
+    <div class="tabel ctr">
+        <div class="board">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div> 
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <button id="Reset" onclick=" 
+        resetboard();
+        //localStorage.removeItem('cols')
+         ">Reset</button>
+    </div>
+    <script src="XO.js"></script>
+</body>
+</html>
