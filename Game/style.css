@@ -105,3 +105,23 @@ body{
 .card-back:hover .back{
     transform: translateY(0);
 }
+
+@media  (max-width: 500px) {
+    .page-title{
+        font-size: 4em;
+    }
+
+    .game-info{
+        font-size: 2em;
+    }
+
+    .card{
+        position: relative;
+        height: 175px;
+        width: 95px;
+        border-radius: 12px;
+        border: 1px solid;
+        border-color: rgb(3, 4, 67);
+        overflow: hidden;
+    }
+}
