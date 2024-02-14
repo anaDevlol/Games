@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-   background: wheat;
-}
+
 h1{
     color: white;
     text-align: center;
@@ -51,10 +49,7 @@ h1{
 }
 
 @media (max-width: 500px) {
-    body{
-        background: yellow;
-    }
-    .content:hover{
+  .content:hover{
         transform: scale(1.01);
         cursor: pointer;
     }
@@ -80,9 +75,6 @@ h1{
 
 
 @media (min-width: 750px) {
-    body{
-        background: rgb(51, 255, 0);
-    }
     .content{
         border: 2px solid;
     }
