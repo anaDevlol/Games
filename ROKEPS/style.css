@@ -12,14 +12,20 @@
 
 body {
     text-align: center;
-    background: url(image/76.jpeg) ;
+    background: url(image/76.jpeg);
     background-position: center;
     background-size: contain;
     backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
     
 }
 .container{
-    padding: 60px 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 6px;
     text-transform: capitalize;
     color: var(--col);
     background: transparent;
@@ -41,14 +47,22 @@ button {
     background: transparent;
     border-radius: 9px;
     font-size: 1em;
-    backdrop-filter: blur(20px);
     cursor: pointer;
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .reset-button,
 .auto-play-button {
-    padding: 10px 195px;
+    width: 450px;
+    height: 3em;
     color: #040404;
     font-weight: bold;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
@@ -63,13 +77,27 @@ button:is(::before, :hover) {
     height: 80px;
 }
 
-@media  (max-width: 500px) {
+@media  (max-width: 670px) {
     body {
         text-align: center;
-        background: url(image/76.jpeg) no-repeat ;
-        background-position: center;
-        background-size: cover;
+        background: url(image/76.jpeg) ;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
         backdrop-filter: blur(5px);
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .reset-button,
+    .auto-play-button {
+        width: 350px;
+        height: 3em;
+        font-size: 17px;
+        margin-bottom: 5px;
     }
 }
 
