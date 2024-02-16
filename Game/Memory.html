@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="page-title">Mix Or Match</h1>
+
+    <div class="overlad-text visible">
+         Start a Game
+    </div>
+
+    <div id="game-over-text" class="overlad-text">
+        GAME OVER
+        <span class="overlad-text-small">Click to Restart</span>
+    </div>
+
+    <div id="victory-text" class="overlad-text">
+        YOU WINNER
+        <span class="overlad-text-small">Click to Restart</span>
+    </div>
+
+
+
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time: <span id="time-remaining">70</span>
+            </div>
+            <div class="game-info">Flips:<span id="flips">0</span>
+            </div>
+        </div>
+
+        <div class="card ">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/foureyes.png" >
+            </div>
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/dainasor.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/pink.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/orange.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/green.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/purple.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/lightgreen.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/green.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/orangeoneeye.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/orange.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/purple.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/orangeoneeye.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/pink.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/dainasor.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/lightgreen.png" >
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="card-back card-face">
+                <img class="back" src="images/front.png" >
+            </div>
+
+            <div class="card-front card-face">
+                <img class="card-value" src="images/foureyes.png" >
+            </div>
+        </div>
+        
+    </div>
+   
+
+    <script src="memory.js"></script>
+</body>
+</html>
