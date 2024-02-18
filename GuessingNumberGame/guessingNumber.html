@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="UserName">
+    <h2></h2>
+    <button class="nameChange">Change Name</button>
+</div>
+
+    <div class="continer">
+        <h1>Number Guessing Game</h1>
+        <p class="context">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if upir guess was too high or too low.</p>
+
+     
+         <div class="alertdiv">You have to guess ...
+            <button class="okeybuttom">Okey</button>
+        </div>
+
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
