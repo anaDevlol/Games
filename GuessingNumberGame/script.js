@@ -117,7 +117,7 @@ randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
 function giveUp(){
-    count continer = document.querySelector(".continer");
+    const continer = document.querySelector(".continer");
     giveupButton = document.createElement("button");
     giveupButton.textContent = "I'm Give up";
     giveupButton.style.boxShadow = "3px 3px 6px rgb(2, 2, 69)";
