@@ -34,7 +34,6 @@ if(guessField.value === ''){
 }else{
     if(guessCount === 1){
         guesses.textContent = "Previous guesses:";
-        giveUp();
     }
     guesses.textContent = `${guesses.textContent} ${userGuess}`;
     
@@ -52,6 +51,8 @@ if(guessField.value === ''){
         lowOrHi.textContent = "";
         setGameOver();
         
+    }else if (guessCount === 5){
+        giveUp();
     }
 
     else{
