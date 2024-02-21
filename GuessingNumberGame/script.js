@@ -117,6 +117,7 @@ randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
 function giveUp(){
+    count continer = document.querySelector('.continer');
     giveupButton = document.createElement("button");
     giveupButton.textContent = "I'm Give up";
     giveupButton.style.boxShadow = "3px 3px 6px rgb(2, 2, 69)";
@@ -129,7 +130,7 @@ function giveUp(){
     giveupButton.style.background = "white";
     giveupButton.style.border = "1px solid rgb(2, 2, 69)";
     giveupButton.style.cursor = "pointer";
-    document.body.append(giveupButton);
+    continer.append(giveupButton);
 
     
     giveupButton.addEventListener("click", () =>{ 
