@@ -80,6 +80,7 @@ if(guessField.value === ''){
 function setGameOver(){
     guessField.disabled = true;
     guessSubmit.disabled = true;
+    const continer = document.querySelector(".continer");
     resetButton = document.createElement("button");
     resetButton.textContent = "Start new game";
     resetButton.style.boxShadow = "3px 3px 6px rgb(2, 2, 69)";
@@ -92,7 +93,7 @@ function setGameOver(){
     resetButton.style.background = "white";
     resetButton.style.border = "1px solid rgb(2, 2, 69)";
     resetButton.style.cursor = "pointer";
-    document.body.append(resetButton);
+    continer.append(resetButton);
     resetButton.addEventListener("click", resetGame);
     
 }
