@@ -107,7 +107,7 @@ for(const resetPara of resetParas){
 }
 
 resetButton.parentNode.removeChild(resetButton);
-giveupButton.disabled = false;
+giveupButton.parentNode.removeChild(giveupButton);
 guessField.disabled =false;
 guessSubmit.disabled =false;
 guessField.value = "";
